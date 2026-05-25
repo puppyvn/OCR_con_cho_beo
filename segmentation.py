@@ -17,7 +17,7 @@ def preprocess_img(img_path, output_path):
         35,
         11
     )
-    final = cv2.medianBlur(binary, 1)
+    final = cv2.medianBlur(binary, 5)
     cv2.imwrite(str(output_path), final)
     return True
 
